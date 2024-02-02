@@ -4,10 +4,10 @@ const fLink = (route, text) => <a href={route} className='font-semibold text-gra
 
 const AuthContainer = ({ children, title, footerLink }) => {
   return (
-    <div className='w-screen h-screen bg-gray-800 flex justify-center items-center p-5'>
-        <div className='w-full md:w-1/3 rounded-lg p-5 bg-gray-900 min-h-[100pt] flex flex-col'>
+    <div className='w-screen h-screen bg-gray-800 flex justify-center items-center p-10'>
+        <div className='w-full md:w-1/3 rounded-lg p-5 bg-gray-900 min-h-[100pt] flex flex-col shadow-2xl shadow-slate-950 hover:shadow-xl hover:scale-[99.3%] transition'>
             <div className='w-full pt-4 justify-end flex'>
-                <h3 className='font-bold text-lg italic px-5 text-gray-400'>
+                <h3 className='font-bold text-md italic px-5 text-slate-500'>
                     { title }
                 </h3>
             </div>

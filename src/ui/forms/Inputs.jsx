@@ -1,10 +1,10 @@
-export const TextInput = ({ type, placeholder, moreClasses }) => {
+export const TextInput = ({ type, placeholder, moreClasses, Icon }) => {
     
     return (
         <div className="w-full px-3 py-5">
             <div className='bg-gray-800 rounded-lg border-gray-600 border-2 shadow flex'>
                 <span className='flex justify-center items-center h-auto text-sm px-3 bg-gray-900 rounded-l-lg'>
-                    Icon
+                    <Icon />
                 </span>
                 <input type={type} placeholder={placeholder} className={`${moreClasses} w-full px-3 py-2 bg-transparent`} />
             </div>
