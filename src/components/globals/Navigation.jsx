@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaList } from "react-icons/fa";
+import { UserButton } from "@clerk/nextjs";
 
 export const Navigation = () => {
   return (
@@ -14,7 +15,7 @@ export const Navigation = () => {
         <Link href="/">Upload</Link>
       </div> */}
       <div className="block lg:hidden">
-        <FaList />
+        <UserButton />
       </div>
     </div>
   );

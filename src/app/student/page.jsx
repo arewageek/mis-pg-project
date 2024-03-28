@@ -1,9 +1,13 @@
 import { Files } from "@/components/tables/Files";
 import { Progress } from "@/components/ui/progress";
-import { FaFileArchive, FaFolder, FaImage, FaListAlt } from "react-icons/fa";
+import { FaFolder, FaImage } from "react-icons/fa";
 import Link from "next/link";
 
-export default function StudentDashboard() {
+import { auth, clerkClient, UserButton } from "@clerk/nextjs";
+import { Card, CardContent } from "@/components/ui/card";
+import { RightCol } from "@/components/globals/RightCol";
+
+export default async function StudentDashboard() {
   const recentUploads = [
     {
       preview:
@@ -30,6 +34,12 @@ export default function StudentDashboard() {
       icon: <FaImage />,
     },
   ];
+
+  const { userId } = auth();
+
+  const user = await clerkClient.users.getUser(userId);
+
+  const username = `${user.firstName} ${user.lastName}`;
 
   return (
     <main className="flex flex-col lg:flex-row p-4">
@@ -190,7 +200,7 @@ export default function StudentDashboard() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/4 space-x-2 bg-white shadow rounded-lg p-10"></div>
+      <RightCol />
     </main>
   );
 }

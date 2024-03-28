@@ -12,8 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="bg-gray-100 text-gray-700">
-          <Navigation />
+        <body className="bg-gray-100 text-gray-700 py-12 lg:py-24">
+          {/* <Navigation /> */}
           {children}
         </body>
       </html>
