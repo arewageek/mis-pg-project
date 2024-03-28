@@ -1,10 +1,12 @@
-import NextAuth from 'next-auth'
-import { authConfig } from '@/authconfig'
+import { authMiddleware } from "@clerk/nextjs";
 
-export default NextAuth(authConfig).auth;
+// See https://clerk.com/docs/references/nextjs/auth-middleware
+// for more information about configuring your Middleware
+export default authMiddleware({
+  // Allow signed out users to access the specified routes:
+  // publicRoutes: ['/anyone-can-visit-this-route'],
+});
 
 export const config = {
-    matcher: [
-        '/((?!api|_next/static|_next/image|favicon.ico).*)'
-    ],
+  matcher: ["/"],
 };
