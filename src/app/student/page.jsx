@@ -77,7 +77,7 @@ export default function StudentDashboard() {
                   </h5>
                   <div>
                     <Progress
-                      value={34}
+                      value={40}
                       background="bg-purple-500"
                       className="bg-purple-200"
                     />
@@ -109,14 +109,14 @@ export default function StudentDashboard() {
                   <h5 className="font-bold text-xl mb-2 text-black">Photos</h5>
                   <div>
                     <Progress
-                      value={34}
+                      value={74}
                       background="bg-pink-500"
                       className="bg-pink-200"
                     />
                   </div>
                   <div className="flex justify-between items-center mt-3">
-                    <p className="text-sm text-gray-600">17 files</p>
-                    <p className="font-bold text-black">789 MB</p>
+                    <p className="text-sm text-gray-600">36 files</p>
+                    <p className="font-bold text-black">1,523 MB</p>
                   </div>
                 </div>
               </div>
@@ -141,14 +141,14 @@ export default function StudentDashboard() {
                   <h5 className="font-bold text-xl mb-2 text-black">Videos</h5>
                   <div>
                     <Progress
-                      value={34}
+                      value={26}
                       background="bg-blue-500"
                       className="bg-blue-200"
                     />
                   </div>
                   <div className="flex justify-between items-center mt-3">
-                    <p className="text-sm text-gray-600">17 files</p>
-                    <p className="font-bold text-black">789 MB</p>
+                    <p className="text-sm text-gray-600">7 files</p>
+                    <p className="font-bold text-black">519 MB</p>
                   </div>
                 </div>
               </div>
