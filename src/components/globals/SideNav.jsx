@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export const SideNav = () => {
   const menu = [
-    { label: "dashboard", path: "/", icon: <FaHome /> },
-    { label: "uploads", path: "/uploads", icon: <FaUpload /> },
+    { label: "dashboard", path: "/student", icon: <FaHome /> },
+    { label: "uploads", path: "/student/uploads", icon: <FaUpload /> },
   ];
 
   return (
